@@ -22,7 +22,7 @@ import java.util.concurrent.ThreadLocalRandom;
 @RestController
 @RequestMapping("/api/trades/stream")
 @RequiredArgsConstructor
-@CrossOrigin(originPatterns = {"http://localhost:5173", "https://*.vercel.app"}, allowCredentials = "true")
+@CrossOrigin(originPatterns = {"http://localhost:5173", "https://trade-blotter-siva.vercel.app"}, allowCredentials = "true")
 public class SseController {
 
     private static final List<String> EVENT_TYPES = List.of(
